@@ -10,7 +10,7 @@ request({
   qs: {
     host: conf.hostname,
     domain: conf.domain,
-    password: conf.password
+    password: conf.key
   }
 }, (err, _, res) => {
   console.log(res)
