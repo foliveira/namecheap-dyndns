@@ -1,0 +1,27 @@
+{
+  "name": "namecheap-dyndns",
+  "version": "1.0.0",
+  "description": "Client for Namecheap Dynamic DNS",
+  "bin": {
+    "ncdd": "./bin/namecheap-dyndns"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foliveira/namecheap-dyndns.git"
+  },
+  "keywords": [
+    "dns",
+    "dynamic",
+    "namecheap"
+  ],
+  "author": "Fabio Oliveira <curious@foliveira.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/foliveira/namecheap-dyndns/issues"
+  },
+  "homepage": "https://github.com/foliveira/namecheap-dyndns#readme",
+  "dependencies": {
+    "rc": "^1.1.6",
+    "request": "^2.79.0"
+  }
+}

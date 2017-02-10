@@ -1,0 +1,17 @@
+#!
+
+const request = require('request')
+const conf = require('rc', {
+  hostname: '@'
+})
+
+request({
+  uri: 'https://dynamicdns.park-your-domain.com/update',
+  qs: {
+    host: conf.hostname,
+    domain: conf.domain,
+    password: conf.password
+  }
+}, (err, _, res) => {
+  console.log(res)
+})
