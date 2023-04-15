@@ -1,29 +1,41 @@
-# namecheap-dyndns
+# Namecheap DynDNS 🌐
 
-Allows you to update your dynamic DNS configurations for your domains
+![GitHub version](https://img.shields.io/github/package-json/v/foliveira/namecheap-dyndns?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/foliveira/namecheap-dyndns?style=for-the-badge)
+[![GitHub license](https://img.shields.io/github/license/foliveira/namecheap-dyndns?style=for-the-badge)][1]
 
-## Getting Started
-Install this package globally with: `npm install -g namecheap-dyndns` or `yarn global add namecheap-dyndns`
+Namecheap DynDNS is a command-line tool that allows you to update your dynamic DNS configurations for your domains using Namecheap API. With this tool, you can update your DNS record under a domain to a specific IP address.
 
-## Usage
+## 🚀 Getting Started
 
-Three parameters must be passed to the application so it can authenticate and update your Dynamic DNS configuration:
+### Prerequisites
+  - Node.js 14.x or later
 
-* **Hostname**
-* **Domain**
-* **Key**
+### Installing
 
-These can be passed to the application, through **command line switches**:
-
-`$ ncdd --hostname [host] --domain [domain] --key [accountKey]`
-
-**environment variables**:
-
-`$ ncdd_hostname=[host] ncdd_domain=[domain] ncdd_key=[accountKey]`
-
-or **stored on file**, under `$HOME/.ncddrc` or `$HOME/.$ncdd/config`, with the following structure:
-
+```bash
+npm install -g namecheap-dyndns
 ```
+
+### Usage
+
+You must pass three parameters to the application to authenticate and update your dynamic DNS configuration:
+  - hostname
+  - domain
+  - key
+
+These parameters can be passed to the application through:
+ - **Command line switches**:
+```bash
+ncdd --hostname [hostname] --domain [domain] --key [accountKey]
+```
+- **Environment variables**:
+
+```bash
+ncdd_hostname=[hostname] ncdd_domain=[domain] ncdd_key=[accountKey]
+```
+  - **Config file**: $HOME/.ncddrc or $HOME/.$ncdd/config
+```json
 {
   "hostname": "[hostname]",
   "domain": "[domain]",
@@ -31,11 +43,19 @@ or **stored on file**, under `$HOME/.ncddrc` or `$HOME/.$ncdd/config`, with the 
 }
 ```
 
+*Note: The default value for hostname is @.*
 
+## 📄 License
 
-### Default Values
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-* Hostname => '@'
+## 💻 Contributing
 
-## License
-Copyright (c) 2017 Fábio Oliveira <curious@foliveira.me>. Licensed under the MIT license.
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page or create a pull request.
+
+## 📢 Acknowledgments
+
+- [Namecheap API Documentation][3]
+
+[1]: https://github.com/foliveira/namecheap-dyndns/blob/master/LICENSE
+[3]: https://www.namecheap.com/support/api/
