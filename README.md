@@ -1,6 +1,7 @@
 # Namecheap DynDNS 🌐
 
 ![GitHub version](https://img.shields.io/github/package-json/v/foliveira/namecheap-dyndns?style=for-the-badge)
+[![NPM Version](https://img.shields.io/npm/v/namecheap-dyndns?style=for-the-badge)][2]
 ![GitHub last commit](https://img.shields.io/github/last-commit/foliveira/namecheap-dyndns?style=for-the-badge)
 [![GitHub license](https://img.shields.io/github/license/foliveira/namecheap-dyndns?style=for-the-badge)][1]
 
@@ -58,4 +59,5 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 - [Namecheap API Documentation][3]
 
 [1]: https://github.com/foliveira/namecheap-dyndns/blob/master/LICENSE
+[2]: https://www.npmjs.com/package/namecheap-dyndns
 [3]: https://www.namecheap.com/support/api/
